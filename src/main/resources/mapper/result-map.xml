@@ -5,11 +5,12 @@
 
 <mapper namespace="com.lucifer.mapper.WxUserMapper">
     <resultMap type="com.lucifer.model.WxInfo" id="WxInfoMap">
+        <result column="id" property="id"/>
         <result column="wx_id" property="wxId"/>
-
         <result column="nick_name" property="nickName"/>
         <result column="avatar" property="avatar"/>
-
-
+        <result column="real_name" property="realName"/>
+        <result column="phone" property="phone"/>
+        <result column="department" property="department"/>
     </resultMap>
 </mapper>

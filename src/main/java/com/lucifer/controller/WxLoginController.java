@@ -2,10 +2,14 @@ package com.lucifer.controller;
 
 import com.lucifer.exception.WxAuthenticationException;
 
+import com.lucifer.model.WxInfo;
 import com.lucifer.service.WxService;
+import com.lucifer.utils.Result;
 import com.lucifer.utils.StringHelper;
 import org.json.JSONException;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,8 +28,15 @@ import java.io.IOException;
 @RequestMapping("/wx")
 public class WxLoginController {
 
+    @Value("${wx.appId}")
+    private String AppId;
+
+    @Value("${wx.redirect_uri}")
+    private String redirectURI;
+
     @Resource
     private WxService wxService;
+
 
 
 
@@ -46,12 +57,24 @@ public class WxLoginController {
         if (!StringHelper.isEmpty(loginRedirectUrl)) {
             return "redirect:"+loginRedirectUrl;
         }
-        return "redirect:/appreciate/category";
+        return "redirect:/";
     }
 
     @RequestMapping(value="/login",method = RequestMethod.GET)
     public String toLogin(){
-        return "redirect:https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7933d55ea3872f4d&redirect_uri=http%3a%2f%2fbirthday.dbdbd.cn%2fwx%2flogin-by-code&response_type=code&scope=snsapi_userinfo&state=vote#wechat_redirect";
+        return "redirect:https://open.weixin.qq.com/connect/oauth2/authorize?appid="+AppId+"&redirect_uri="+ redirectURI;
         //return "redirect: https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7933d55ea3872f4d&redirect_uri=https%3a%2f%2fwww.jd.com&response_type=code&scope=snsapi_userinfo&state=vote#wechat_redirect";
+    }
+
+    public Result getWxUserByWxId(@CookieValue("token") String wxId){
+        if (null == wxId) {
+            return Result.fail("no token cookie value");
+        }
+        WxInfo wxInfo = wxService.getWxUserByWxId(wxId);
+        if (null == wxInfo) {
+            return  Result.fail("wxInfo get turn out null");
+        }
+
+        return Result.ok(wxInfo);
     }
 }

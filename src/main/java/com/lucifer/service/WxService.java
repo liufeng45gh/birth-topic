@@ -62,7 +62,7 @@ public class WxService {
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
-    public WxInfo getWxInfo(String code) throws IOException, WxAuthenticationException, JSONException {
+    public WxInfo getWxInfoByCode(String code) throws IOException, WxAuthenticationException, JSONException {
         String url =  "https://api.weixin.qq.com/sns/oauth2/access_token?appid=#{appId}&secret=#{secret}&code=#{code}&grant_type=authorization_code";
         url = url.replace("#{appId}",appId);
         url = url.replace("#{secret}",secret);
@@ -82,7 +82,7 @@ public class WxService {
         wxInfo.setAccessToken((String) resultMap.get("access_token"));
         wxInfo.setWxId((String) resultMap.get("openid"));
 
-        this.syncWeixinUserInfo(wxInfo);
+        //this.syncWeixinUserInfo(wxInfo);
         return wxInfo;
     }
 
@@ -112,15 +112,15 @@ public class WxService {
     }
 
     public void loginByCode(String code,  HttpServletResponse response) throws JSONException, WxAuthenticationException, IOException {
-        WxInfo wxInfo = this.getWxInfo(code);
+        WxInfo wxInfo = this.getWxInfoByCode(code);
         WxInfo dbWxInfo = wxUserDao.getWxUserByWxId(wxInfo.getWxId());
         if (null == dbWxInfo) {
             wxUserDao.insertWxUser(wxInfo);
         }
-        String token = UUID.randomUUID().toString();
-        //stringRedisTemplate.opsForValue().set(Constant.CACHE_KEY_PERSISTENCE_TOKEN_PRE+token,wxInfo.getWxId());
-        this.writeToken(token,wxInfo.getWxId());
-        Cookie c2 = new Cookie("token",token);
+//        String token = UUID.randomUUID().toString();
+//        //stringRedisTemplate.opsForValue().set(Constant.CACHE_KEY_PERSISTENCE_TOKEN_PRE+token,wxInfo.getWxId());
+//        this.writeToken(token,wxInfo.getWxId());
+        Cookie c2 = new Cookie("token",wxInfo.getWxId());
 //设置生命周期为1小时，秒为单位
         c2.setPath("/");
         c2.setMaxAge(12 * 30 * 24 * 3600);
@@ -132,6 +132,10 @@ public class WxService {
     }
     public String getWxIdByToken(String token){
         return stringRedisTemplate.opsForValue().get(Constant.CACHE_KEY_PERSISTENCE_TOKEN_PRE+token);
+    }
+
+    public WxInfo  getWxUserByWxId(String wxId){
+       return wxUserDao.getWxUserByWxId(wxId);
     }
 
 }
