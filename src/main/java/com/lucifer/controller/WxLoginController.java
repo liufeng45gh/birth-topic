@@ -9,10 +9,7 @@ import com.lucifer.utils.StringHelper;
 import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
@@ -66,6 +63,8 @@ public class WxLoginController {
         //return "redirect: https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7933d55ea3872f4d&redirect_uri=https%3a%2f%2fwww.jd.com&response_type=code&scope=snsapi_userinfo&state=vote#wechat_redirect";
     }
 
+    @RequestMapping(value="/get-user-info",method = RequestMethod.GET)
+    @ResponseBody
     public Result getWxUserByWxId(@CookieValue("token") String wxId){
         if (null == wxId) {
             return Result.fail("no token cookie value");

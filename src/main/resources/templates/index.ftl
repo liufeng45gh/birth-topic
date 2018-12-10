@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title>.....</title>
-    <link rel="stylesheet" type="text/css" href="/web/css/vote.css?version=1.1"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css?version=1.1"/>
     <script  src="/js/jquery-3.1.1.js"></script>
     <script  src="/js/common.js"></script>
     <script  type="text/javascript" src="/layer/layer.js"></script>
@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<script  src="/web/js/index.js"></script>
+<script  src="/js/index.js"></script>
 </body>
 
 
