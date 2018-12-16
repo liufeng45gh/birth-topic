@@ -37,5 +37,5 @@ function getUserInfo(){
 }
 
 $("document").ready(function(){
-    getUserInfo();
+    //getUserInfo();
 });

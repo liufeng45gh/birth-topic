@@ -1,0 +1,106 @@
+
+/* page1 */
+.page-1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.page-1 .center-logo{
+    width: 21rem;
+    position: absolute;
+    left: 4.4rem;
+    top: 5rem;
+}
+
+
+.page-1 .process-bg{
+    width: 21rem;
+    position: absolute;
+    left: 4.4rem;
+    top: 30rem;
+}
+
+.page-1 .process-line-boundary{
+     width: 21rem;
+     position: absolute;
+     left: 4.4rem;
+     top: 30rem;
+ }
+
+ .page-1 .process-line-relative{
+     width: 70%;
+     position: relative;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    overflow-x: hidden;
+ }
+
+.page-1 .process-line{
+    width: 21rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+
+}
+
+.page-1 .process-text{
+     width: 21rem;
+     position: absolute;
+     left: 4.4rem;
+     top: 31rem;
+     font-size: 2rem;
+     line-height: 3rem;
+ }
+
+ .page-1 .loading-text{
+      width: 21rem;
+      position: absolute;
+      left: 4.4rem;
+      top: 37rem;
+      font-size: 2rem;
+      line-height: 3rem;
+  }
+
+/* page2 */
+
+  .page-2{
+      height: 100%;
+      width: 100%;
+      position: relative;
+  }
+
+  .page-2 .baby-init{
+      width: 100%;
+      position: absolute;
+      left: 0rem;
+      top: 3rem;
+  }
+/* page3 */
+  .page-2 .button-start{
+      width: 17rem;
+      position: absolute;
+      left: 6.4rem;
+      bottom: 2.7rem;
+  }
+
+.page-3{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.page-3 .rule-alert{
+  width: 27rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 10rem;
+}
+
+.page-3 .btn-close{
+    width: 5rem;
+    position: absolute;
+    left: 12.4rem;
+    top: 31.5rem;
+}
+
+
