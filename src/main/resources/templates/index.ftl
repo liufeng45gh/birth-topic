@@ -34,6 +34,10 @@
             <#include "5-page.ftl">
         </div>
 
+        <div class="swiper-slide">
+            <#include "6-page.ftl">
+        </div>
+
 
     </div>
     <!-- Add Pagination -->
