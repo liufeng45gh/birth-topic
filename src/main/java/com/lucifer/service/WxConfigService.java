@@ -42,7 +42,7 @@ public class WxConfigService {
          return WxSign.sign(jsapiTicket,shareUrl);
     }
 
-    @Scheduled(cron = "0 0 */1 * * ?")
+//    @Scheduled(cron = "0 0 */1 * * ?")
     //@PostConstruct
     public void refreshWxJsapiTicket() throws IOException {
           String accessToken =  this.getAccessToken();

@@ -1,4 +1,9 @@
 
+.page-unit{
+   height: 100%;
+    width: 100%;
+    position: relative;
+}
 /* page1 */
 .page-1{
     height: 100%;
@@ -102,5 +107,192 @@
     left: 12.4rem;
     top: 31.5rem;
 }
+
+
+/* page4 */
+.page-4 .top-bar{
+  width: 30.5rem;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+
+.page-4 .number-selected-1{
+    width: 1.7rem;
+    position: absolute;
+    left: 5.2rem;
+    top: 2.7rem;
+}
+
+.page-4 .number-selected-2{
+    width: 1.7rem;
+    position: absolute;
+    left: 6.7rem;
+    top: 2.7rem;
+}
+
+.page-4 .number-split{
+    width: 1.7rem;
+    position: absolute;
+    left: 8rem;
+    top: 2.7rem;
+}
+
+.page-4 .number-total-1{
+     width: 1.7rem;
+     position: absolute;
+     left: 9rem;
+     top: 2.7rem;
+}
+.page-4 .number-total-2{
+     width: 1.7rem;
+     position: absolute;
+     left: 10.5rem;
+     top: 2.7rem;
+}
+
+.page-4 .second-1{
+     width: 1.7rem;
+     position: absolute;
+     left: 19.7rem;
+     top: 2.7rem;
+}
+.page-4 .second-2{
+     width: 1.7rem;
+     position: absolute;
+     left: 21.2rem;
+     top: 2.7rem;
+}
+
+.page-4 .selected-area{
+     width: 100%;
+     position: static;
+     margin-top: 8rem;
+
+}
+
+.page-4 .v-cell{
+     width: 100%;
+     position: static;
+     height: 10rem;
+
+}
+
+.page-4 .h-cell{
+     width: 4rem;
+     display: inline-block;
+     width: 9rem;
+
+}
+
+.page-4 .h-left-cell{
+
+
+
+}
+
+.page-4 .h-middle-cell{
+
+
+
+}
+
+.page-4 .h-right-cell{
+
+
+
+}
+
+.page-4 .cell-btn{
+     width: 100%;
+     position: static;
+
+}
+
+
+/* page5 */
+.page-5 .title-lv{
+  width: 16.5rem;
+  position: absolute;
+  left: 7rem;
+  top: 2rem;
+
+}
+
+.page-5 .crown{
+  width: 12.5rem;
+  position: absolute;
+  left: 9rem;
+  top: 6.5rem;
+
+}
+.page-5 .ribbon{
+    width: 28.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 10rem;
+
+}
+
+.page-5 .star{
+    width: 14.5rem;
+    position: absolute;
+    left: 8rem;
+    top: 10.5rem;
+}
+
+.page-5 .head{
+    width: 14.5rem;
+    position: absolute;
+    left: 8rem;
+    top: 12.5rem;
+}
+.page-5 .btn-area{
+    width: 100%;
+    top: 30.5rem;
+    position: absolute;
+    left: 0rem;
+
+}
+.page-5 .btn-share{
+    width: 11.5rem;
+    display: inline-block;
+
+}
+
+.page-5 .btn-again{
+    width: 11.5rem;
+    display: inline-block;
+    margin-left: 1.2rem;
+}
+
+.page-5 .split-line{
+    width: 28.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 38rem;
+}
+
+.page-5 .qr-code{
+    width: 10.5rem;
+    position: absolute;
+    left: 3rem;
+    top: 40rem;
+}
+
+.page-5 .qr-code-text{
+    width: 16rem;
+    position: absolute;
+    left: 14rem;
+    top: 44rem;
+    color: #0d548e;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    line-height: 2rem;
+}
+
+
+
 
 

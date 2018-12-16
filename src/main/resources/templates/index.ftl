@@ -27,6 +27,12 @@
         <div class="swiper-slide">
             <#include "3-page.ftl">
         </div>
+        <div class="swiper-slide">
+            <#include "4-page.ftl">
+        </div>
+        <div class="swiper-slide">
+            <#include "5-page.ftl">
+        </div>
 
 
     </div>
@@ -43,6 +49,8 @@
         clickable: true,
       },
     });
+
+    //swiper.disableTouchControl();
 </script>
 
 <script  src="/js/index.js"></script>
