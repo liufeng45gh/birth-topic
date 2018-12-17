@@ -47,15 +47,7 @@
 </div>
 
 <script>
-    var swiper = new Swiper('.swiper-container', {
-      direction: 'vertical',
-      noSwiping : true,
-      pagination: {
-        clickable: true,
-      },
-    });
 
-    //swiper.disableTouchControl();
 </script>
 
 <script  src="/js/index.js"></script>

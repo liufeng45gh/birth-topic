@@ -81,6 +81,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  overflow: auto;
 
   /* Center slide text vertically */
   display: -webkit-box;
