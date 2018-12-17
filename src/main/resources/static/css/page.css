@@ -12,24 +12,24 @@
 }
 
 .page-1 .center-logo{
-    width: 21rem;
+    width: 21.5rem;
     position: absolute;
-    left: 4.4rem;
+    left: 4.5rem;
     top: 5rem;
 }
 
 
 .page-1 .process-bg{
-    width: 21rem;
+    width: 21.5rem;
     position: absolute;
-    left: 4.4rem;
+    left: 4.5rem;
     top: 30rem;
 }
 
 .page-1 .process-line-boundary{
-     width: 21rem;
+     width: 21.5rem;
      position: absolute;
-     left: 4.4rem;
+     left: 4.5rem;
      top: 30rem;
  }
 
@@ -42,25 +42,25 @@
  }
 
 .page-1 .process-line{
-    width: 21rem;
+    width: 21.5rem;
     margin-left: 0rem;
     margin-top: 0rem;
 
 }
 
 .page-1 .process-text{
-     width: 21rem;
+     width: 21.5rem;
      position: absolute;
-     left: 4.4rem;
+     left: 4.5rem;
      top: 31rem;
      font-size: 2rem;
      line-height: 3rem;
  }
 
  .page-1 .loading-text{
-      width: 21rem;
+      width: 21.5rem;
       position: absolute;
-      left: 4.4rem;
+      left: 4.5rem;
       top: 37rem;
       font-size: 2rem;
       line-height: 3rem;
@@ -80,14 +80,16 @@
       left: 0rem;
       top: 3rem;
   }
-/* page3 */
+
   .page-2 .button-start{
-      width: 17rem;
-      position: absolute;
-      left: 6.4rem;
-      bottom: 2.7rem;
+    width: 17.5rem;
+    position: absolute;
+    left: 6.5rem;
+    top: 48.7rem;
   }
 
+  
+/* page3 */
 .page-3{
   height: 100%;
   width: 100%;
@@ -95,16 +97,16 @@
 }
 
 .page-3 .rule-alert{
-  width: 27rem;
+  width: 27.5rem;
   position: absolute;
-  left: 1.4rem;
+  left: 1.5rem;
   top: 10rem;
 }
 
 .page-3 .btn-close{
-    width: 5rem;
+    width: 5.5rem;
     position: absolute;
-    left: 12.4rem;
+    left: 12.5rem;
     top: 31.5rem;
 }
 
@@ -376,6 +378,13 @@
 .page-6 .department-bound{
      left: 1rem;
      top: 45.5rem;
+}
+
+.page-6 .button-submit{
+    width: 11.5rem;
+    position: absolute;
+    left: 9.5rem;
+    top: 51.7rem;
 }
 
 
