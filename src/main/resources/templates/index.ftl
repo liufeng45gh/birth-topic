@@ -27,7 +27,7 @@
         <div class="swiper-slide">
             <#include "3-page.ftl">
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-no-swiping">
             <#include "4-page.ftl">
         </div>
         <div class="swiper-slide">
@@ -49,6 +49,7 @@
 <script>
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
+      noSwiping : true,
       pagination: {
         clickable: true,
       },
