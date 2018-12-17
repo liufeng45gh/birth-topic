@@ -27,7 +27,8 @@
         <div class="swiper-slide">
             <#include "3-page.ftl">
         </div>
-        <div class="swiper-slide swiper-no-swiping">
+
+        <div class="swiper-slide">
             <#include "4-page.ftl">
         </div>
         <div class="swiper-slide">
