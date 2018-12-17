@@ -17,7 +17,7 @@
     <div class="selected-area">
         <div class="v-cell">
             <div class="h-cell h-left-cell">
-                <img class="cell-btn" src="/images/4/icon-analysis.png"/>
+                <img class="cell-btn" src="/images/4/icon-analysis.png" />
             </div>
             <div class="h-cell h-middle-cell">
                 <img class="cell-btn" src="/images/4/icon-boat.png"/>
@@ -76,7 +76,7 @@
                 <img class="cell-btn" src="/images/4/icon-write.png"/>
             </div>
             <div class="h-cell h-right-cell">
-                <img class="cell-btn" src="/images/4/icon-planting.png"/>
+                <img class="cell-btn" src="/images/4/icon-cook.png"/>
             </div>
 
         </div>
