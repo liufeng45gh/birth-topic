@@ -5,9 +5,4 @@
 
     <img class="btn-close" src="/images/3/btn-close.png"/>
 
-
-
-
-
-
 </div>

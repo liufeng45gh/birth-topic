@@ -25,7 +25,7 @@
         <div class="swiper-slide">
             <#include "2-page.ftl">
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" id="page-alert-rule">
             <#include "3-page.ftl">
         </div>
 
