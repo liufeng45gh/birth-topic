@@ -52,6 +52,7 @@
 </script>
 
 <script  src="/js/index.js"></script>
+<script  src="/js/action.js"></script>
 </body>
 
 
