@@ -17,6 +17,10 @@
 </head>
 <body>
 
+<div id="page-alert-rule" style="display: none;">
+    <#include "3-page.ftl">
+</div>
+
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -25,8 +29,10 @@
         <div class="swiper-slide">
             <#include "2-page.ftl">
         </div>
-        <div class="swiper-slide" id="page-alert-rule">
-            <#include "3-page.ftl">
+        <div class="swiper-slide" >
+           <div class="blank-div">
+
+           </div>
         </div>
 
         <div class="swiper-slide">
@@ -46,11 +52,10 @@
 
     <div class="arrow-down" id="nextPage"></div>
 
+
 </div>
 
-<script>
 
-</script>
 
 <script  src="/js/index.js"></script>
 <script  src="/js/action.js"></script>

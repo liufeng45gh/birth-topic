@@ -96,20 +96,51 @@
   height: 100%;
   width: 100%;
   position: relative;
+
 }
 
+.rule-alert .layui-layer-content{
+   background-color: transparent;
+}
+body .rule-alert {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/*
 .page-3 .rule-alert{
   width: 27.5rem;
   position: absolute;
   left: 1.5rem;
   top: 10rem;
 }
+*/
 
+.page-3 .rule-alert{
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+
+.close-bound{
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+/*
 .page-3 .btn-close{
     width: 5.5rem;
     position: absolute;
     left: 12.5rem;
     top: 31.5rem;
+}
+*/
+.page-3 .btn-close{
+    width: 5.5rem;
+    margin-top: 21.7rem;
+    margin-left: 10.7rem;
 }
 
 

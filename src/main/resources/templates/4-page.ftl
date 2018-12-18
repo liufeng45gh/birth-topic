@@ -4,7 +4,7 @@
     <img class="top-bar" src="/images/4/top-bar.png"/>
     <!--这里是第一个数字区-->
     <img class="number-selected-1" src="/images/4/0.png"/>
-    <img class="number-selected-2" src="/images/4/1.png"/>
+    <img class="number-selected-2" src="/images/4/0.png"/>
     <img class="number-split" src="/images/4/split.png"/>
     <img class="number-total-1" src="/images/4/1.png"/>
     <img class="number-total-2" src="/images/4/0.png"/>
