@@ -35,11 +35,11 @@ function toInitPage(){
 $(document).ready(function(){
     $(".button-start").touchClick(function (){
         swiper.slideTo(3);
-        setTimeout(openRule,2000);
+        setTimeout(openRuleAlert,2000);
     });
 });
 
-function openRule(){
+function openRuleAlert(){
     layer.open({
           type: 1,
           shade: false,
@@ -49,4 +49,9 @@ function openRule(){
             //layer.msg('捕获就是从页面已经存在的元素上，包裹layer的结构', {time: 5000, icon:6});
           }
         });
+}
+
+function closeRuleAlert(){
+    layer.closeAll();
+    parent.layer.closeAll();
 }
