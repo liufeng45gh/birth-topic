@@ -16,12 +16,11 @@ function showProcess(process){
 
 //页面 ready 完成开始显示进度条加载效果
 $(document).ready(function(){
-    intervalId = setInterval(function(){
-    },500)
+    intervalId = setInterval(increaseProcess,500)
 });
 
 //页面 load 完成 显示 100% 并显示下一页
-$(window).load(function(){
+$(window).on("load",function(){
     clearInterval(intervalId);
     processCurrent = 100;
     showProcess(processCurrent);
@@ -29,13 +28,13 @@ $(window).load(function(){
 });
 
 function toInitPage(){
-    swiper.slideTo(2);
+    swiper.slideTo(1);
 }
 
 $(document).ready(function(){
     $(".button-start").touchClick(function (){
         swiper.slideTo(3);
-        setTimeout(openRuleAlert,2000);
+        //setTimeout(openRuleAlert,2000);
     });
 });
 
@@ -54,6 +53,7 @@ function openRuleAlert(){
 function closeRuleAlert(){
     layer.closeAll();
     parent.layer.closeAll();
+    startCountDown();
 }
 
 var intervalCountDown = null;
