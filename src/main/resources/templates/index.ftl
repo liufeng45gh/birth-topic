@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/css/page.css?version=1.1"/>
     <link rel="stylesheet" href="/swiper/dist/css/swiper.min.css"/>
     <script  src="/js/jquery-3.1.1.js"></script>
+    <script  src="/js/jquery.touchClick.js"></script>
     <script src="/swiper/dist/js/swiper.min.js"></script>
     <script  src="/js/common.js"></script>
     <script  type="text/javascript" src="/layer/layer.js"></script>

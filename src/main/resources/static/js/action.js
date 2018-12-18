@@ -31,3 +31,9 @@ $(window).load(function(){
 function toInitPage(){
     swiper.slideTo(2);
 }
+
+$(document).ready(function(){
+    $(".button-start").touchClick(function (){
+        swiper.slideTo(3);
+    });
+});
