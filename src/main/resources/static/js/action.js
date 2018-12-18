@@ -79,3 +79,33 @@ function countDownNext(){
      $(".second-2").attr("src","/images/4/" + numberPosition + ".png");
 
 }
+
+$(function(){
+    $(".cell-btn").click(function () {
+        var url = $(this).attr("src").replace("icon","select");
+        $(this).attr("src",url);
+        $(this).addClass("cell-btn-selected");
+        calculateProcess();
+    });
+});
+
+function calculateProcess(){
+       var selectCount = $(".cell-btn-selected").length;
+
+       var number10Position = selectCount / 10;
+       number10Position = parseInt(number10Position);
+       $(".number-selected-1").attr("src","/images/4/" + number10Position + ".png");
+
+       var numberPosition = selectCount % 10;
+       numberPosition = parseInt(numberPosition);
+        $(".number-selected-2").attr("src","/images/4/" + numberPosition + ".png");
+
+        if (selectCount == 10) {
+            submitSelect();
+        }
+
+}
+
+function submitSelect(){
+       alert("submit");
+}
