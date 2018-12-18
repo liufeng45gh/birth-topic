@@ -55,3 +55,27 @@ function closeRuleAlert(){
     layer.closeAll();
     parent.layer.closeAll();
 }
+
+var intervalCountDown = null;
+
+var indexCountDown = 60;
+
+function startCountDown(){
+    indexCountDown = 60;
+    intervalCountDown = setInterval(countDownNext, 1000);
+}
+
+function countDownNext(){
+    indexCountDown = indexCountDown - 1;
+    if (indexCountDown < 0) {
+        indexCountDown = 0;
+    }
+    var number10Position = indexCountDown / 10;
+    number10Position = parseInt(number10Position);
+    $(".second-1").attr("src","/images/4/" + number10Position + ".png");
+
+    var numberPosition = indexCountDown % 10;
+    numberPosition = parseInt(numberPosition);
+     $(".second-2").attr("src","/images/4/" + numberPosition + ".png");
+
+}
