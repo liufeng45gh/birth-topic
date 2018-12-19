@@ -126,11 +126,29 @@ function calculateProcess(){
         $(".number-selected-2").attr("src","/images/4/" + numberPosition + ".png");
 
         if (selectCount == 10) {
-            submitSelect();
+            setTimeout(submitSelect,500);
+            //submitSelect();
         }
 
 }
 
 function submitSelect(){
        alert("submit");
+       var wrongCount = 0;
+        $(".cell-btn-selected").each(function (){
+             isRight = $(this).attr("isRight");
+            if (isRight ==0 ) {
+                wrongCount ++;
+            }
+        });
+
+        if (wrongCount == 0) {
+            swiper.slideTo(5);
+        }else (wrongCount == 1) {
+            swiper.slideTo(4);
+        }else {
+            swiper.slideTo(4);
+            $(".title-lv").attr("src","/images/5/title-lv-1.png");
+            $(".star").attr("src","/images/5/star-3.png");
+        }
 }
