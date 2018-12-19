@@ -36,8 +36,8 @@ $(document).ready(function(){
 
 //页面 load 完成 显示 100% 并显示下一页
 $(window).on("load",function(){
-    if (clearInterval <60 ){
-        setTimeout(doLoadFinish,2000);
+    if (processCurrent < 60 ){
+        setTimeout(doLoadFinish,3000);
     }else {
         doLoadFinish();
     }
@@ -144,7 +144,7 @@ function submitSelect(){
 
         if (wrongCount == 0) {
             swiper.slideTo(5);
-        }else (wrongCount == 1) {
+        }else if (wrongCount == 1) {
             swiper.slideTo(4);
         }else {
             swiper.slideTo(4);

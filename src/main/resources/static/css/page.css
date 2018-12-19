@@ -420,11 +420,14 @@ body .rule-alert {
     top: 51.7rem;
 }
 
-.page6 .c-input{
+.page-6 .c-input{
     border-color: #a5c9e4;
-    border-radius: 5px;
+    border-width: 0.2rem;
+    border-radius: 1rem;
     color: #839ba5;
     background-color: #FFFFFF;
+    font-size: 1.5rem;
+    padding-left: 1.2rem;
 }
 
 
