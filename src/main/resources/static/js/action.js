@@ -1,12 +1,27 @@
 
 var intervalId = null;
 var processCurrent = 0;
+var increaseQuantity = 5;
 function increaseProcess(){
-    processCurrent = processCurrent + 1;
+    processCurrent = processCurrent + increaseQuantity;
     if (processCurrent>99) {
         processCurrent = 99;
     }
+    resetIncreaseQuantity();
     showProcess(processCurrent);
+}
+function resetIncreaseQuantity(){
+    if (processCurrent < 20) {
+        increaseQuantity = 5;
+    }else if (processCurrent < 40) {
+        increaseQuantity = 4;
+    }else if (processCurrent < 60) {
+         increaseQuantity = 3;
+    }else if (processCurrent < 80) {
+          increaseQuantity = 2;
+    }else if (processCurrent < 90) {
+       increaseQuantity = 1;
+     }
 }
 
 function showProcess(process){
@@ -21,11 +36,19 @@ $(document).ready(function(){
 
 //页面 load 完成 显示 100% 并显示下一页
 $(window).on("load",function(){
+    if (clearInterval <60 ){
+        setTimeout(doLoadFinish,2000);
+    }else {
+        doLoadFinish();
+    }
+});
+
+function doLoadFinish(){
     clearInterval(intervalId);
     processCurrent = 100;
     showProcess(processCurrent);
     setTimeout(toInitPage,1000);
-});
+}
 
 function toInitPage(){
     swiper.slideTo(1);
