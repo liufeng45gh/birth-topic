@@ -10,7 +10,7 @@
 
     </div>
     <div class="process-text">
-            50%
+            0%
     </div>
 
     <div class="loading-text">
