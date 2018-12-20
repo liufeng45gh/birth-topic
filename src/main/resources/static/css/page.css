@@ -231,15 +231,12 @@ body .rule-alert {
 .page-4 .v-cell{
      width: 100%;
      position: static;
-     height: 10rem;
-
+     height: 13rem;
 }
 
 .page-4 .h-cell{
-     width: 4rem;
      display: inline-block;
-     width: 9rem;
-
+     width: 12rem;
 }
 
 .page-4 .h-left-cell{
@@ -456,6 +453,13 @@ body .layui-layer-hui .layui-layer-content{
     font-size: 1.3rem;
     line-height: 1.5rem;
     text-align: center;
+}
+
+body .layui-layer-loading .layui-layer-content {
+    width: 6rem;
+    height: 2.4rem;
+    background-size: 6rem 2.4rem;
+    background-repeat: no-repeat;
 }
 
 

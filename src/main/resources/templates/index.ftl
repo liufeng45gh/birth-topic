@@ -10,7 +10,7 @@
     <script src="/swiper/dist/js/swiper.min.js"></script>
     <script  src="/js/common.js"></script>
     <script  type="text/javascript" src="/layer/layer.js"></script>
-    
+
     <script  type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script  type="text/javascript" src="/js/wx-share.js?version=1.0"></script>
 
@@ -27,26 +27,26 @@
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-no-swiping">
             <#include "1-page.ftl">
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-no-swiping">
             <#include "2-page.ftl">
         </div>
-        <div class="swiper-slide" >
+        <div class="swiper-slide swiper-no-swiping" >
            <div class="blank-div">
 
            </div>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-no-swiping">
             <#include "4-page.ftl">
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-no-swiping">
             <#include "5-page.ftl">
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-no-swiping">
             <#include "6-page.ftl">
         </div>
 

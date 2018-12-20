@@ -20,23 +20,29 @@
                 <img class="cell-btn" src="/images/4/icon-analysis.png" isRight="1" />
             </div>
             <div class="h-cell h-middle-cell">
-                <img class="cell-btn" src="/images/4/icon-boat.png" isRight="1"/>
+                <img class="cell-btn" src="/images/4/icon-boat.png" isRight="0"/>
             </div>
-            <div class="h-cell h-right-cell">
-                <img class="cell-btn" src="/images/4/icon-clip.png" isRight="1"/>
-            </div>
+
 
         </div>
 
         <div class="v-cell">
+
+            <div class="h-cell h-right-cell">
+                <img class="cell-btn" src="/images/4/icon-clip.png" isRight="1"/>
+            </div>
             <div class="h-cell h-left-cell">
                 <img class="cell-btn" src="/images/4/icon-composing.png" isRight="1"/>
             </div>
+
+        </div>
+        <div class="v-cell">
+
             <div class="h-cell h-middle-cell">
-                <img class="cell-btn" src="/images/4/icon-dress-up.png" isRight="1"/>
+                <img class="cell-btn" src="/images/4/icon-dress-up.png" isRight="0"/>
             </div>
             <div class="h-cell h-right-cell">
-                <img class="cell-btn" src="/images/4/icon-drink.png" isRight="1"/>
+                <img class="cell-btn" src="/images/4/icon-drink.png" isRight="0"/>
             </div>
 
         </div>
@@ -48,19 +54,27 @@
             <div class="h-cell h-middle-cell">
                 <img class="cell-btn" src="/images/4/icon-interview.png" isRight="1"/>
             </div>
+
+        </div>
+
+
+        <div class="v-cell">
+
             <div class="h-cell h-right-cell">
                 <img class="cell-btn" src="/images/4/icon-night.png" isRight="1"/>
+            </div>
+
+            <div class="h-cell h-left-cell">
+                <img class="cell-btn" src="/images/4/icon-photo.png" isRight="1"/>
             </div>
 
         </div>
 
 
         <div class="v-cell">
-            <div class="h-cell h-left-cell">
-                <img class="cell-btn" src="/images/4/icon-photo.png" isRight="1"/>
-            </div>
+
             <div class="h-cell h-middle-cell">
-                <img class="cell-btn" src="/images/4/icon-plan.png" isRight="0"/>
+                <img class="cell-btn" src="/images/4/icon-plan.png" isRight="1"/>
             </div>
             <div class="h-cell h-right-cell">
                 <img class="cell-btn" src="/images/4/icon-planting.png" isRight="0"/>
@@ -70,14 +84,26 @@
 
         <div class="v-cell">
             <div class="h-cell h-left-cell">
-                <img class="cell-btn" src="/images/4/icon-ps.png" isRight="0"/>
+                <img class="cell-btn" src="/images/4/icon-ps.png" isRight="1"/>
             </div>
             <div class="h-cell h-middle-cell">
-                <img class="cell-btn" src="/images/4/icon-write.png" isRight="0"/>
+                <img class="cell-btn" src="/images/4/icon-write.png" isRight="1"/>
             </div>
+
+
+        </div>
+
+        <div class="v-cell">
+
             <div class="h-cell h-right-cell">
                 <img class="cell-btn" src="/images/4/icon-cook.png" isRight="0"/>
             </div>
+
+        </div>
+
+        <div class="v-cell">
+
+            &nbsp;
 
         </div>
 

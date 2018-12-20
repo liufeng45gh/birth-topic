@@ -107,6 +107,10 @@ function countDownNext(){
 
 $(function(){
     $(".cell-btn").click(function () {
+        var selectCount = $(".cell-btn-selected").length;
+         if (selectCount >= 10) {
+            return;
+         }
         var url = $(this).attr("src").replace("icon","select");
         $(this).attr("src",url);
         $(this).addClass("cell-btn-selected");
@@ -114,6 +118,7 @@ $(function(){
     });
 });
 
+var loadingIndex = null;
 function calculateProcess(){
        var selectCount = $(".cell-btn-selected").length;
 
@@ -126,14 +131,16 @@ function calculateProcess(){
         $(".number-selected-2").attr("src","/images/4/" + numberPosition + ".png");
 
         if (selectCount == 10) {
-            setTimeout(submitSelect,500);
+            loadingIndex = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2
+            setTimeout(submitSelect,5000);
             //submitSelect();
         }
 
 }
 
 function submitSelect(){
-       alert("submit");
+       //alert("submit");
+       layer.close(layer.index);
        var wrongCount = 0;
         $(".cell-btn-selected").each(function (){
              isRight = $(this).attr("isRight");
