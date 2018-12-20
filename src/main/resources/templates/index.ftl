@@ -25,6 +25,10 @@
     <#include "3-success.ftl">
 </div>
 
+<div id="page-alert-share" style="display: none;">
+    <#include "3-share.ftl">
+</div>
+
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide swiper-no-swiping">

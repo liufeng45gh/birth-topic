@@ -174,6 +174,25 @@ $(function(){
 });
 
 $(function(){
+    $(".btn-share").touchClick(function (){
+        //window.location.href = "?random="+ Math.random();
+        layer.open({
+                type: 1,
+
+                title: false, //不显示标题
+                skin: 'rule-alert',
+
+
+                content: $('#page-alert-share'), //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
+                area: ['19rem', '13rem'],
+                shadeClose : true,
+                offset: ['0rem', ' 21rem'],
+                 closeBtn: 0 //不显示关闭按钮
+              });
+    });
+});
+
+$(function(){
     $("#button-info-submit").touchClick(function(){
         var  phone = $(".phone-bound").val();
         if (isEmpty(phone)) {
