@@ -161,7 +161,7 @@ body .rule-alert {
 
 .page-3 .btn-correct{
     width: 5.5rem;
-    margin-top: 21.7rem;
+    margin-top: 16rem;
     margin-left: 10.7rem;
 }
 
@@ -450,6 +450,12 @@ body .rule-alert {
     background-color: #FFFFFF;
     font-size: 1.5rem;
     padding-left: 1.2rem;
+}
+
+body .layui-layer-hui .layui-layer-content{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
 }
 
 

@@ -170,6 +170,7 @@ $(function(){
     $("#button-info-submit").touchClick(function(){
         var  phone = $(".phone-bound").val();
         if (isEmpty(phone)) {
+            //layer.msg('手机号不能为空',{time:1000000*1000});
             layer.msg('手机号不能为空');
             return;
         }
@@ -185,10 +186,10 @@ $(function(){
             layer.msg('部门不能为空');
             return;
         }
-        var data = {};
-        data.phone = phone;
-        data.name = realName;
-        data.department = department;
+        var data_send = {};
+        data_send.phone = phone;
+        data_send.name = realName;
+        data_send.department = department;
 
          var url = "/invitation/save";
             var invite_request =$.ajax({
@@ -200,7 +201,7 @@ $(function(){
 
             invite_request.fail(function( jqXHR, textStatus ) {
                  //openWeiboLogin();
-                layer.msg("操作异常,重复手机号录入");
+                layer.msg("操作异常,重复录入的手机号");
 
             });
 
