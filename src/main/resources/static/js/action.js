@@ -175,6 +175,11 @@ $(function(){
             return;
         }
 
+        if(!(/^1[3|4|5|7|8][0-9]\d{8,11}$/.test(phone))){
+             layer.msg('手机号格式不正确');
+            return ;
+        }
+
         var  realName = $(".real-bound").val();
         if (isEmpty(realName)) {
             layer.msg('真实姓名不能为空');
