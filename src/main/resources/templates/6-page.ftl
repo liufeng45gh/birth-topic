@@ -9,7 +9,7 @@
 
     <img class="star" src="/images/6/star-5.png"/>
 
-    <img class="gift-box" src="/images/6/gift-box.png"/>
+    <img class="gift-box" src="/images/6/gift-box.gif"/>
 
     <img class="text-name-phone" src="/images/6/text-name-phone.png"/>
 

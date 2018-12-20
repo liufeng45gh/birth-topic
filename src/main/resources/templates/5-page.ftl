@@ -9,7 +9,7 @@
 
     <img class="star" id="5-star" src="/images/5/star-4.png"/>
 
-    <img class="head" src="/images/5/head.png"/>
+    <img class="head" src="/images/5/head.gif"/>
 
 
     <div class="btn-area">
