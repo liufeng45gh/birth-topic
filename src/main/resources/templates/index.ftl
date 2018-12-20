@@ -10,10 +10,10 @@
     <script src="/swiper/dist/js/swiper.min.js"></script>
     <script  src="/js/common.js"></script>
     <script  type="text/javascript" src="/layer/layer.js"></script>
-    <!--
+    
     <script  type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script  type="text/javascript" src="/js/wx-share.js?version=1.0"></script>
-    -->
+
 </head>
 <body>
 
