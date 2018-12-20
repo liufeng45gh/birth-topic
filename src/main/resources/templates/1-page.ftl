@@ -14,7 +14,7 @@
     </div>
 
     <div class="loading-text">
-        努力加载中.....
+        祝福在路上.....
     </div>
 
 

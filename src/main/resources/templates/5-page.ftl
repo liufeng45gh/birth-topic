@@ -23,10 +23,10 @@
 
     <div class="qr-code-text">
         <div>
-            将战绩截屏并发至
+            将战绩截屏并发到
         </div>
         <div>
-            中国石油官方微信或微博
+            昆仑能源官方微信
         </div>
 
     </div>

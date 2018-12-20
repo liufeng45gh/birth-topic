@@ -9,7 +9,7 @@ if(lineLink.indexOf("?") != -1)
 //location.href=webHref.substring(0,pos);
 //var lineLink = "http://vote.dbdbd.cn/appreciate/index";
 //var lineLink = webHref.substring(0,pos);
-var shareContent = "昆仑能源官方微博两岁啦!";
+var shareContent = "昆仑能源官方微信两岁啦!";
 var shareTitle = "昆宝成长记";
 var appid = "wx41dbe3ee3f386699";
   
