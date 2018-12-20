@@ -1,4 +1,4 @@
-var shareImgUrl = "http://osi1i0y6i.bkt.clouddn.com/share-logo.jpg";
+var shareImgUrl = "http://birthday.dbdbd.cn/images/share-logo.png";
 
 var lineLink = window.location.href;
 if(lineLink.indexOf("?") != -1)
@@ -9,8 +9,8 @@ if(lineLink.indexOf("?") != -1)
 //location.href=webHref.substring(0,pos);
 //var lineLink = "http://vote.dbdbd.cn/appreciate/index";
 //var lineLink = webHref.substring(0,pos);
-var shareContent = "小伙伴们快来投票啦!";
-var shareTitle = "中国石油第二届新媒体内容创作大赛";
+var shareContent = "昆仑能源官方微博两岁啦!";
+var shareTitle = "昆宝成长记";
 var appid = "wx41dbe3ee3f386699";
   
 $(document).ready(function() {
