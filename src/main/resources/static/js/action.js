@@ -200,12 +200,22 @@ $(function(){
 
             invite_request.fail(function( jqXHR, textStatus ) {
                  //openWeiboLogin();
-                layer.msg("操作异常");
+                layer.msg("操作异常,重复手机号录入");
 
             });
 
             invite_request.done(function(data) {
-                  layer.msg("提交成功");
+                   layer.open({
+                    type: 1,
+
+                    title: false, //不显示标题
+                    skin: 'rule-alert',
+                    style: 'position:fixed;  width: 90%; height: 45%; border:none;',
+
+                    content: $('#page-alert-success'), //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
+                    area: ['90%', '65%'],
+                     closeBtn: 0 //不显示关闭按钮
+                  });
 
             });
     });

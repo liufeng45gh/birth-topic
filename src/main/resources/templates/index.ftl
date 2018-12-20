@@ -21,6 +21,10 @@
     <#include "3-page.ftl">
 </div>
 
+<div id="page-alert-success" style="display: none;">
+    <#include "3-success.ftl">
+</div>
+
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">

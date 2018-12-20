@@ -144,6 +144,28 @@ body .rule-alert {
 }
 
 
+
+.page-3 .success-alert{
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+
+.correct-bound{
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+
+.page-3 .btn-correct{
+    width: 5.5rem;
+    margin-top: 21.7rem;
+    margin-left: 10.7rem;
+}
+
+
 /* page4 */
 .page-4 .top-bar{
   width: 30.5rem;
