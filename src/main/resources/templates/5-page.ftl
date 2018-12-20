@@ -1,13 +1,13 @@
 
 
 <div class="page-5">
-    <img class="title-lv" src="/images/5/title-lv-2.png"/>
+    <img class="title-lv" id="5-title-lv" src="/images/5/title-lv-2.png"/>
 
     <img class="crown" src="/images/5/crown.png"/>
 
     <img class="ribbon" src="/images/5/ribbon.png"/>
 
-    <img class="star" src="/images/5/star-4.png"/>
+    <img class="star" id="5-star" src="/images/5/star-4.png"/>
 
     <img class="head" src="/images/5/head.png"/>
 

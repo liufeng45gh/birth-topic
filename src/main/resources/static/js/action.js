@@ -148,8 +148,8 @@ function submitSelect(){
             swiper.slideTo(4);
         }else {
             swiper.slideTo(4);
-            $(".title-lv").attr("src","/images/5/title-lv-1.png");
-            $(".star").attr("src","/images/5/star-3.png");
+            $("#5-title-lv").attr("src","/images/5/title-lv-1.png");
+            $("#5-star").attr("src","/images/5/star-3.png");
         }
 }
 
