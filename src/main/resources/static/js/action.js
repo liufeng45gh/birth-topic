@@ -70,7 +70,7 @@ function openRuleAlert(){
           style: 'position:fixed;  width: 90%; height: 45%; border:none;',
 
           content: $('#page-alert-rule'), //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
-          area: ['90%', '45%'],
+          area: ['90%', '65%'],
            closeBtn: 0 //不显示关闭按钮
         });
 }
@@ -155,6 +155,58 @@ function submitSelect(){
 
 $(function(){
     $(".btn-again").touchClick(function (){
-        window.location.reload();
+        //window.location.href = "?random="+ Math.random();
+         var lineLink = window.location.href;
+         if(lineLink.indexOf("?") != -1)
+         {
+             lineLink = lineLink.split("?")[0];
+             console.log(lineLink);
+         }
+       window.location.href = lineLink+"?random=" + Math.random();
     });
 });
+
+$(function(){
+    $("#button-info-submit").touchClick(function(){
+        var  phone = $(".phone-bound").val();
+        if (isEmpty(phone)) {
+            layer.msg('手机号不能为空');
+            return;
+        }
+
+        var  realName = $(".real-bound").val();
+        if (isEmpty(realName)) {
+            layer.msg('真实姓名不能为空');
+            return;
+        }
+
+        var  department = $(".department-bound").val();
+        if (isEmpty(department)) {
+            layer.msg('部门不能为空');
+            return;
+        }
+        var data = {};
+        data.phone = phone;
+        data.name = realName;
+        data.department = department;
+
+         var url = "/invitation/save";
+            var invite_request =$.ajax({
+               type: 'post',
+               url: url,
+               data: data_send,
+               dataType: 'json'
+            });
+
+            invite_request.fail(function( jqXHR, textStatus ) {
+                 //openWeiboLogin();
+                layer.msg("操作异常");
+
+            });
+
+            invite_request.done(function(data) {
+                  layer.msg("提交成功");
+
+            });
+    });
+})

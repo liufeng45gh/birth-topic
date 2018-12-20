@@ -34,7 +34,7 @@
 
     <input class="text-field-bound c-input department-bound"  />
 
-    <img class="button-submit" src="/images/6/button-submit.png"/>
+    <img class="button-submit" id="button-info-submit" src="/images/6/button-submit.png"/>
 
 
     
