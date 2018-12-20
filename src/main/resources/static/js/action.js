@@ -152,3 +152,9 @@ function submitSelect(){
             $(".star").attr("src","/images/5/star-3.png");
         }
 }
+
+$(function(){
+    $(".btn-again").touchClick(function (){
+        window.location.reload();
+    });
+});
