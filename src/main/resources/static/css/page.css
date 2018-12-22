@@ -68,6 +68,13 @@
       color: #786f69;
   }
 
+.loading-text img{
+    margin-left: auto;
+    margin-right:auto;
+    width: 17rem;
+}
+
+
 /* page2 */
 
   .page-2{

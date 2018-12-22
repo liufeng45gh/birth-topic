@@ -14,7 +14,7 @@
     </div>
 
     <div class="loading-text">
-        祝福在路上.....
+        <img  src="/images/1/loading-text.jpg">
     </div>
 
 
