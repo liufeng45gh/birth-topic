@@ -47,6 +47,7 @@ $(document).ready(function() {
                 wx.ready(function(){
                     // 获取"分享到朋友圈"按钮点击状态及自定义分享内容接口
                     //alert("wx.ready");
+                    //$("#bg-music").get(0).volume = 0.1;
                      $("#bg-music").get(0).play();
                     wx.onMenuShareTimeline({
                         title: shareTitle, // 分享标题

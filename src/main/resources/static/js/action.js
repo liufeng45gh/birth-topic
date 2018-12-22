@@ -79,6 +79,7 @@ function openRuleAlert(){
 function closeRuleAlert(){
     layer.closeAll();
     parent.layer.closeAll();
+    $("#bg-music").get(0).pause();
     startCountDown();
 }
 
@@ -165,6 +166,7 @@ function submitSelect(){
             $("#5-title-lv").attr("src","/images/5/title-lv-1.png");
             $("#5-star").attr("src","/images/5/star-3.png");
         }
+         $("#bg-music").get(0).play();
 }
 
 $(function(){
