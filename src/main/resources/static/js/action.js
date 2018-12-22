@@ -48,6 +48,7 @@ function doLoadFinish(){
     processCurrent = 100;
     showProcess(processCurrent);
     setTimeout(toInitPage,1000);
+
 }
 
 function toInitPage(){
@@ -114,6 +115,12 @@ $(function(){
         var url = $(this).attr("src").replace("icon","select");
         $(this).attr("src",url);
         $(this).addClass("cell-btn-selected");
+        isRight = $(this).attr("isRight");
+        if (isRight == 1) {
+            $("#right-music").get(0).play();
+        }else{
+            $("#wrong-music").get(0).play();
+        }
         calculateProcess();
     });
 });
