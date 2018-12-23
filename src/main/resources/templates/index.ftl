@@ -17,6 +17,18 @@
 </head>
 <body>
 
+<audio id="bg-music" controls="controls" loop="loop"  style="width:0px;height:0px;">
+    <source src="/music/music-bg.mp3" />
+</audio>
+
+<audio id="right-music" preload="auto"  style="width:0px;height:0px;">
+    <source src="/music/right.mp3" />
+</audio>
+
+<audio id="wrong-music" preload="auto" style="width:0px;height:0px;">
+    <source src="/music/wrong.mp3" />
+</audio>
+
 <div id="page-alert-rule" style="display: none;">
     <#include "3-page.ftl">
 </div>
@@ -68,17 +80,7 @@
 <script  src="/js/index.js"></script>
 <script  src="/js/action.js"></script>
 
-<audio id="bg-music" controls="controls" loop="loop"  style="width:0px;height:0px;">
-    <source src="/music/music-bg.mp3" />
-</audio>
 
-<audio id="right-music" preload="auto"  style="width:0px;height:0px;">
-    <source src="/music/right.mp3" />
-</audio>
-
-<audio id="wrong-music" preload="auto" style="width:0px;height:0px;">
-    <source src="/music/wrong.mp3" />
-</audio>
 </body>
 
 
