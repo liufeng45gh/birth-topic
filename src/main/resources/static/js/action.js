@@ -166,7 +166,10 @@ function submitSelect(){
             $("#5-title-lv").attr("src","/images/5/title-lv-1.png");
             $("#5-star").attr("src","/images/5/star-3.png");
         }
-         $("#bg-music").get(0).play();
+        if (isMusicOn) {
+            $("#bg-music").get(0).play();
+        }
+
 }
 
 $(function(){
@@ -261,3 +264,20 @@ $(function(){
             });
     });
 })
+
+var isMusicOn = true;
+$(function(){
+    $(".music-switch").touchClick(function(){
+
+        if (isMusicOn == true) {
+             $(".music-switch").attr("src", "/images/2/music-off.jpg");
+               $("#bg-music").get(0).pause();
+            isMusicOn = false;
+        }else {
+              $(".music-switch").attr("src", "/images/2/music-on.jpg");
+                $("#bg-music").get(0).play();
+               isMusicOn = true;
+        }
+
+    });
+});
