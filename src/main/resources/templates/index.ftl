@@ -68,7 +68,7 @@
 <script  src="/js/index.js"></script>
 <script  src="/js/action.js"></script>
 
-<audio id="bg-music" preload="auto" controls="controls" loop="loop" autoplay="autoplay" style="width:0px;height:0px;">
+<audio id="bg-music" controls="controls" loop="loop"  style="width:0px;height:0px;">
     <source src="/music/music-bg.mp3" />
 </audio>
 
