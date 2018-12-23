@@ -13,7 +13,7 @@ var shareContent = "昆仑能源官方微信两岁啦!";
 var shareTitle = "昆宝成长记";
 var appid = "wx41dbe3ee3f386699";
   
-$(document).ready(function() {
+$(window).on("load",function() {
     var data_send = {};
     //lineLink = location.href.split('#')[0];
     data_send.shareUrl = location.href.split('#')[0];
