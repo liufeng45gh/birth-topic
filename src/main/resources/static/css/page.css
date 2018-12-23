@@ -59,9 +59,9 @@
  }
 
  .page-1 .loading-text{
-      width: 21.5rem;
+      width: 15.5rem;
       position: absolute;
-      left: 4.5rem;
+      left: 7.5rem;
       top: 37rem;
       font-size: 2rem;
       line-height: 3rem;
@@ -71,7 +71,7 @@
 .loading-text img{
     margin-left: auto;
     margin-right:auto;
-    width: 17rem;
+    width: 12rem;
 }
 
 
