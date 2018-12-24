@@ -85,10 +85,10 @@ function closeRuleAlert(){
 
 var intervalCountDown = null;
 
-var indexCountDown = 60;
+var indexCountDown = 15;
 
 function startCountDown(){
-    indexCountDown = 60;
+    indexCountDown = 15;
     intervalCountDown = setInterval(countDownNext, 1000);
 }
 

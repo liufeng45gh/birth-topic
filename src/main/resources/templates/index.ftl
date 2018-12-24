@@ -12,7 +12,7 @@
     <script  type="text/javascript" src="/layer/layer.js"></script>
 
     <script  type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-    <script  type="text/javascript" src="/js/wx-share.js?version=1.0"></script>
+    <script  type="text/javascript" src="/js/wx-share.js?version=1.1"></script>
 
 </head>
 <body>
@@ -77,8 +77,8 @@
 
 
 
-<script  src="/js/index.js"></script>
-<script  src="/js/action.js"></script>
+<script  src="/js/index.js?version=1.0"></script>
+<script  src="/js/action.js?version-1.0"></script>
 
 
 </body>

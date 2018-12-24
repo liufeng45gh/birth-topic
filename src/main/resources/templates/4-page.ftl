@@ -10,8 +10,8 @@
     <img class="number-total-2" src="/images/4/0.png"/>
 
     <!--这里是第二个数据区-->
-    <img class="second-1" src="/images/4/6.png"/>
-    <img class="second-2" src="/images/4/0.png"/>
+    <img class="second-1" src="/images/4/1.png"/>
+    <img class="second-2" src="/images/4/5.png"/>
     <div style="clear-both;"></div>
 
     <div class="selected-area">
