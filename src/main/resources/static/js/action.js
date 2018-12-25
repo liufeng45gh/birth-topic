@@ -164,7 +164,7 @@ function submitSelect(){
 
         if (rightCount == 10) {
             swiper.slideTo(5);
-        }else if (wrongCount == 9) {
+        }else if (rightCount == 9) {
             swiper.slideTo(4);
         }else {
             swiper.slideTo(4);
