@@ -99,7 +99,7 @@ function countDownNext(){
     if (indexCountDown <= 0) {
         indexCountDown = 0;
         clearInterval(intervalCountDown);
-        loadingIndex = layer.load(0, {shade: true}); //0代表加载的风格，支持0-2
+        loadingIndex = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2
         setTimeout(submitSelect,5000);
     }
     var number10Position = indexCountDown / 10;
@@ -144,7 +144,7 @@ function calculateProcess(){
         $(".number-selected-2").attr("src","/images/4/" + numberPosition + ".png");
 
         if (selectCount == 10) {
-            loadingIndex = layer.load(0, {shade: true}); //0代表加载的风格，支持0-2
+            loadingIndex = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2
             setTimeout(submitSelect,5000);
             //submitSelect();
         }
