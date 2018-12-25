@@ -87,6 +87,8 @@ var intervalCountDown = null;
 
 var indexCountDown = 15;
 
+var loadingIndex = null;
+
 function startCountDown(){
     indexCountDown = 15;
     intervalCountDown = setInterval(countDownNext, 1000);
@@ -94,8 +96,11 @@ function startCountDown(){
 
 function countDownNext(){
     indexCountDown = indexCountDown - 1;
-    if (indexCountDown < 0) {
+    if (indexCountDown <= 0) {
         indexCountDown = 0;
+        clearInterval(intervalCountDown);
+        loadingIndex = layer.load(0, {shade: true}); //0代表加载的风格，支持0-2
+        setTimeout(submitSelect,5000);
     }
     var number10Position = indexCountDown / 10;
     number10Position = parseInt(number10Position);
@@ -126,7 +131,7 @@ $(function(){
     });
 });
 
-var loadingIndex = null;
+
 function calculateProcess(){
        var selectCount = $(".cell-btn-selected").length;
 
@@ -139,7 +144,7 @@ function calculateProcess(){
         $(".number-selected-2").attr("src","/images/4/" + numberPosition + ".png");
 
         if (selectCount == 10) {
-            loadingIndex = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2
+            loadingIndex = layer.load(0, {shade: true}); //0代表加载的风格，支持0-2
             setTimeout(submitSelect,5000);
             //submitSelect();
         }
@@ -149,17 +154,17 @@ function calculateProcess(){
 function submitSelect(){
        //alert("submit");
        layer.close(layer.index);
-       var wrongCount = 0;
+       var rightCount = 0;
         $(".cell-btn-selected").each(function (){
              isRight = $(this).attr("isRight");
-            if (isRight ==0 ) {
-                wrongCount ++;
+            if (isRight == 1 ) {
+                rightCount ++;
             }
         });
 
-        if (wrongCount == 0) {
+        if (rightCount == 10) {
             swiper.slideTo(5);
-        }else if (wrongCount == 1) {
+        }else if (wrongCount == 9) {
             swiper.slideTo(4);
         }else {
             swiper.slideTo(4);
